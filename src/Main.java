@@ -45,9 +45,9 @@ public class Main {
         System.out.println("Pozostalo " + zuberek.getCurrentCapacity());
         System.out.println("Procentowo wypito " + Math.round(zuberek.getDrinkedPercentage()));
 
-
+        // `<type>[] <name>` means that variable may contain an array of the type before []
+        // `new <type>[]` creates a new array
         Pet[] animals = new Pet[5];
-
 
         animals[0] = lajka;
         animals[1] = new Pet("chuj", "red");;
@@ -59,6 +59,7 @@ public class Main {
             animals[counter].introduce();
         }
 
+        animals = new Pet[10];
 
 
 
