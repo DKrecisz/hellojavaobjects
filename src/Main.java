@@ -46,6 +46,22 @@ public class Main {
         System.out.println("Procentowo wypito " + Math.round(zuberek.getDrinkedPercentage()));
 
 
+        Pet[] animals = new Pet[5];
+
+
+        animals[0] = lajka;
+        animals[1] = new Pet("chuj", "red");;
+        animals[2] = new Pet("zuber", "red");
+        animals[3] = new Pet("zywiec", "red");
+        animals[4] = new Pet("kubek", "red");
+
+        for (int counter = 0; counter < animals.length; counter++) {
+            animals[counter].introduce();
+        }
+
+
+
+
     }
 
 
